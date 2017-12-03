@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lootlo.lootlo.earn_money"
+    android:background="@color/signin"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/myLayout"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/colorAccent"
+            >
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_account_balance_wallet_black_24dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0 Rs"
+                android:id="@+id/bal"
+                />
+
+
+        </RelativeLayout>
+        <com.ebanx.swipebtn.SwipeButton
+            android:id="@+id/swipe_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:inner_text="SWIPE to Show Ad"
+            app:inner_text_color="@android:color/white"
+            app:inner_text_size="20dp"
+            app:inner_text_top_padding="18dp"
+            app:inner_text_bottom_padding="18dp"
+            app:inner_text_left_padding="50dp"
+            app:inner_text_background="@drawable/shape_rounded"
+            app:button_image_height="60dp"
+            app:button_image_width="100dp"
+            app:button_image_disabled="@drawable/ic_ondemand_video_black_24dp"
+            app:button_image_enabled="@drawable/ic_ondemand_video_black_24dp"
+            app:button_left_padding="20dp"
+            app:button_right_padding="20dp"
+            app:button_top_padding="20dp"
+            app:button_bottom_padding="20dp"
+            app:button_background="@drawable/shape_button"
+            app:initial_state="disabled"
+            app:has_activate_state="true"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/refer"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Input Referral code"
+                android:id="@+id/refercode"
+                android:textColorHint="@color/white"
+                android:inputType="textCapCharacters"
+                android:maxLength="8"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="Get Refer Credit"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:id="@+id/getRefer"
+                android:layout_alignParentRight="true"
+                android:onClick="getRef"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_anchor="@id/myLayout"
+        android:onClick="gotoRef"
+        app:layout_anchorGravity="bottom|right"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_share_black_24dp" />
+
+</android.support.design.widget.CoordinatorLayout>

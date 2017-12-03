@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lootlo.lootlo.myRef">
+
+
+
+    <EditText
+        android:id="@+id/myRef_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Refer Code"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:inputType="textCapCharacters"
+        android:maxLength="8"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/create"
+        android:text="create"
+        android:onClick="create"
+        android:layout_below="@id/myRef_code"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/signin"
+        android:id="@+id/myRef_layout"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"
+        android:text="GJHJDBD"
+        android:textColor="@color/white"
+        android:id="@+id/already"
+        />
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Share with Friends"
+        android:id="@+id/shareButton"
+        android:layout_below="@id/myRef_layout"
+        android:onClick="share"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/myRef_layout"
+        android:id="@+id/shareText"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="50dp"
+        android:text="Share this code with your friends and Get 5 Rs Referral Bonus"
+        />
+
+</RelativeLayout>

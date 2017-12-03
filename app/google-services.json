@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1083435910288",
+    "firebase_url": "https://lootlo-2a2d2.firebaseio.com",
+    "project_id": "lootlo-2a2d2",
+    "storage_bucket": "lootlo-2a2d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083435910288:android:010d40da474fdf07",
+        "android_client_info": {
+          "package_name": "com.lootlo.lootlo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083435910288-e74ve8rs3t0rnog1pejs0h2cqti0j8jj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lootlo.lootlo",
+            "certificate_hash": "37ac7916aa43598161940da9591cab815bf7f835"
+          }
+        },
+        {
+          "client_id": "1083435910288-fn441ppb4v1bnsse41f359tpk8ut6m8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaKVMKJ-dGZRGeUtODCfqPPf5gX5bnqbg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083435910288-fn441ppb4v1bnsse41f359tpk8ut6m8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
